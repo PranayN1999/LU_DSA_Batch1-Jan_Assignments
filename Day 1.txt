@@ -1,0 +1,29 @@
+1.a) for(i=1;i<=n;i++)
+	for(j=i;j<=n;j++)
+	   printf("Hi");
+
+    1st loop	2nd loop
+       1           n
+       2           n-1
+       .           .
+       .           .
+       .           .
+       n-1         2
+       n           1
+
+      
+    for each iteration it executes the following times,
+    iteration no.=> one +  two    +...+ second last + last
+	         => 1*n + 2*(n-1) +...+   (n-1)*2   + n*1
+   
+                 => 2(n + 2n-2 +..) + c (if n is odd, else no need of c) 
+	 
+        by solving this we get n(n+1)(n+2)/6,      
+	So, the time complexity is O(n^3).
+
+1.b) for(i=1;i<=n;i*=3)
+	for(j=1;i<=n;j++)
+	   printf("Hello");
+
+    Here, the second loop runs for infinite times.
+    Therefore, there is no "algorithm time complexity" for this problem.
