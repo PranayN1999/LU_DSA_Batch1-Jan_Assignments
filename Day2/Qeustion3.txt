@@ -1,0 +1,9 @@
+Similarities:
+	- arrayname and pointer stores the address of their respective datatype.
+	- arrayname stores the address of the starting element of the array.
+	- pointer stores the address of the variable which it is initialized.
+
+Differences:
+	- the address in arrayname cannot be changed whereas the address in pointer can be changed.
+	- using arrayname we can traverse to other elements of an array as it is continuous 
+	  allocation whereas pointer is used to store only one address at a time.
